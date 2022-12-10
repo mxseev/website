@@ -1,0 +1,12 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Mono", monospace;
+  font-size: 2rem;
+  padding: 24px;
+  background: #0d1017;
+  color: #39bae6;
+}

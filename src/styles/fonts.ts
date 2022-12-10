@@ -1,7 +1,11 @@
 import localFont from "@next/font/local"
+import cn from "classnames"
+
+const ptMono = localFont({
+  src: [{path: "../../public/fonts/PTMono.ttf"}]
+})
 
 const roboto = localFont({
-  variable: "--font-roboto",
   src: [
     {path: "../../public/fonts/Roboto-Regular.ttf", weight: "400", style: "normal"},
     {path: "../../public/fonts/Roboto-Italic.ttf", weight: "400", style: "italic"},
@@ -12,4 +16,7 @@ const roboto = localFont({
   ]
 })
 
-export {roboto}
+const classNames = cn(ptMono.className, roboto.className)
+
+export {ptMono, roboto}
+export default classNames

@@ -1,20 +1,12 @@
-import {FC, ReactNode} from "react"
+import {FC, PropsWithChildren} from "react"
 
-import {TRPCClientProvider} from "datasources/trpc"
-
-import {roboto} from "styles/fonts"
+import fontClassnames from "styles/fonts"
 import "styles/globals.css"
 
-type Props = {
-  children: ReactNode
-}
-
-const RootLayout: FC<Props> = ({children}) => (
-  <html lang="en" className={roboto.variable}>
+const RootLayout: FC<PropsWithChildren> = ({children}) => (
+  <html lang="en" className={fontClassnames}>
     <head />
-    <body>
-      <TRPCClientProvider>{children}</TRPCClientProvider>
-    </body>
+    <body>{children}</body>
   </html>
 )
 
