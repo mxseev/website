@@ -7,7 +7,6 @@
     "build": "next build",
     "commit": "git add . && cz",
     "dev": "next dev",
-    "postinstall": "sh ./scripts/add_base_remote.sh",
     "preinstall": "npx only-allow pnpm",
     "lint": "concurrently -c green \"pnpm:lint:*\"",
     "lint:ts": "eslint --ext .ts,.tsx .",

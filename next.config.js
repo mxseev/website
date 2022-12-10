@@ -8,6 +8,7 @@ const bundleAnalyzerConfig = {
 
 /** @type {import('next').NextConfig} */
 const config = {
+  output: "standalone",
   experimental: {
     appDir: true
   }
