@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/mxseev/website/compare/v1.0.0...v1.1.0) (2023-02-15)
+
+
+### Features
+
+* add /livez for k8s readness probe ([072f719](https://github.com/mxseev/website/commit/072f7192581a1efb7f09406d5204748a4d065b6f))
+* add HOSTNAME to /api/livez ([cb2498b](https://github.com/mxseev/website/commit/cb2498b463bfd1ec7809942d76c2a2c6a0bca00a))
+
 ## 1.0.0 (2022-12-10)
 
 
