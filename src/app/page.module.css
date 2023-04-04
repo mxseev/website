@@ -4,9 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "PT Mono", monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 2rem;
   padding: 24px;
-  background: #0d1017;
-  color: #39bae6;
+  color: var(--color-text-accent);
 }

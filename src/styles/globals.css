@@ -1,6 +1,29 @@
 @import "modern-normalize/modern-normalize.css";
 
+:root {
+  --color-background-primary: #f8f9fc;
+  --color-text-primary: #000000;
+  --color-text-secondary: #cccccc;
+  --color-text-accent: #39bae6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background-primary: #0d1017;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #404040;
+    --color-text-accent: #39bae6;
+  } 
+}
+
 html, body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 1.8rem;
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
 }

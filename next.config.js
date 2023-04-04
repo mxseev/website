@@ -18,13 +18,30 @@ const config = {
   experimental: {
     appDir: true
   },
+  webpack: (webpackConfig, options) => {
+    webpackConfig.module.rules.push({
+      test: /\.mdx?$/,
+      use: [
+        options.defaultLoaders.babel,
+        {
+          loader: "@mdx-js/loader",
+          options: {}
+        }
+      ]
+    })
+
+    return webpackConfig
+  },
   sentry: {
     hideSourceMaps: true,
     disableServerWebpackPlugin: true,
-    disableClientWebpackPlugin: true,
+    disableClientWebpackPlugin: true
   }
 }
 
 const withBundleAnalyzer = bundleAnalyzer(bundleAnalyzerConfig)
 
-module.exports = withSentryConfig(withBundleAnalyzer(withAxiom(config)), sentryWebpackPluginConfig)
+module.exports = withSentryConfig(
+  withBundleAnalyzer(withAxiom(config)),
+  sentryWebpackPluginConfig
+)

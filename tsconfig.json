@@ -20,7 +20,7 @@
     "jsx": "preserve",
     "target": "es5",
     "lib": ["esnext", "dom"],
-    "types": ["jest", "node"],
+    "types": ["jest", "node", "mdx"],
     "outDir": "build",
     "strict": true,
     "allowJs": false,
